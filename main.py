@@ -8,11 +8,16 @@ from modules.tiktok import register_tiktok
 from modules.facebook import register_facebook
 from modules.instagram import register_instagram
 
-API_ID = int(os.getenv("API_ID", "YOUR_API_ID"))
-API_HASH = os.getenv("API_HASH", "YOUR_API_HASH"))
-BOT_TOKEN = os.getenv("BOT_TOKEN", "YOUR_BOT_TOKEN"))
+API_ID = int(os.getenv("API_ID", "5047271"))
+API_HASH = os.getenv("API_HASH", "047d9ed308172e637d4265e1d9ef0c27")
+BOT_TOKEN = os.getenv("BOT_TOKEN", "7896090354:AAG16U8-FaR2cMxzROcTvOAwePaBmkcG-QU")
 
-app = Client("multi_downloader_bot", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
+app = Client(
+    "multi_downloader_bot",
+    api_id=API_ID,
+    api_hash=API_HASH,
+    bot_token=BOT_TOKEN
+)
 
 # Register all handlers
 register_youtube(app)
